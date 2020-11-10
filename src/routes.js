@@ -9,7 +9,7 @@ router.post("/auth", Auth.autenticar); // validaçao do email e senha onde é ge
 router.get("/jogos", Jogos.tabelaCompleta); // retorna a tabela completa
 router.get("/jogos/:id", Jogos.tabelaPorRodada); // retorna a tabela por rodada
 router.put("/jogos", Session.verify, Jogos.attTabela); // atualiza os gols da partida se caso o usuário estiver logado (localizado pelo id)
-router.get("classificacao", Jogos.tabelaClassificada); // retorna a tabeça completa da classificação.
+router.get("/classificacao", Jogos.tabelaClassificada); // retorna a tabeça completa da classificação.
 
 
 
